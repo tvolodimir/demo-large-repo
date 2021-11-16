@@ -88,6 +88,8 @@ git push -f origin master
 Use GVFS (Git Virtual File System) - https://devblogs.microsoft.com/devops/announcing-gvfs-git-virtual-file-system/
  
 The Virtual Filesystem for Git (formerly GVFS) - https://vfsforgit.org/
+ 
+microsoft/scalar - https://github.com/microsoft/scalar
 
 The command `filter-branch` can rewrite huge swaths of your history - https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History
  
