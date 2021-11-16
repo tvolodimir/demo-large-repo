@@ -86,9 +86,12 @@ git push -f origin master
  
  
 Use GVFS (Git Virtual File System) - https://devblogs.microsoft.com/devops/announcing-gvfs-git-virtual-file-system/
+ 
 The Virtual Filesystem for Git (formerly GVFS) - https://vfsforgit.org/
 
 The command `filter-branch` can rewrite huge swaths of your history - https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History
+ 
+working on two branches simultaneously - https://stackoverflow.com/a/30186843
 
 ## resources:
 - https://github.blog/2020-01-13-highlights-from-git-2-25/
@@ -102,3 +105,5 @@ The command `filter-branch` can rewrite huge swaths of your history - https://gi
 - https://git-lfs.github.com/
 - https://www.atlassian.com/git/tutorials/big-repositories
 - https://jira.atlassian.com/browse/BSERV-11639
+- https://stackoverflow.com/a/67351911
+
