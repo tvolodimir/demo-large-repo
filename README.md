@@ -6,7 +6,7 @@ using partial clone
 ```
 git clone --sparse --filter=blob:none --no-checkout https://github.com/tvolodimir/demo-large-repo.git test1
 ```
-using shalow clone
+using shallow clone
 ```
 git clone --depth 1 --no-checkout https://github.com/tvolodimir/demo-large-repo.git test2
 ```
@@ -82,7 +82,7 @@ git gc --aggressive --prune=all
 git push -f origin master
 ```
  
-## Other technices
+## Other techniques
  
  
 Use GVFS (Git Virtual File System) - https://devblogs.microsoft.com/devops/announcing-gvfs-git-virtual-file-system/
