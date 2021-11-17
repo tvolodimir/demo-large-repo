@@ -21,20 +21,41 @@ You can also use git shallow clone to access a single branch:
 
 ```git clone [remote-url] --branch [name] --single-branch [folder]```
 
+Or you can use `--depth=1` to get all files but with no history.
+
+## Single Branch clone
+ 
+`git clone <url> --single-branch` clones only the remote primary HEAD (default: origin/master)
+`git clone <url> --branch <branch> --single-branch [<folder>]` clones only the remote <branch>
+ 
+```
+# unshallow the current branch
+git fetch --unshallow
+
+# for getting back all the branches
+git config remote.origin.fetch refs/heads/*:refs/remotes/origin/*
+git fetch --unshallow
+```
+
 ## Filter clone
-The format for filter-spec is defined in the options section of git rev-list --help.
+Specifying –filter= allows you to tell the server you’re cloning from the objects you choose.
+The format for filter-spec is defined in the options section of git rev-list --help. or here - https://github.com/git/git/blob/v2.34.0/Documentation/rev-list-options.txt#L883-L931
+
+`--no-checkout` tells Git to avoid checking out the repository entirely
 
 The form `--filter=blob:none` omits all blobs.
  
 The form `--filter=sparse:oid=<blob-ish>` uses a sparse-checkout specification contained in the blob (or blob-expression) <blob-ish> to omit blobs that would not be required for a sparse checkout on the requested refs.
  
 A partial clone with missing trees can be obtained using `git clone --filter=tree:0 <repo>`
+ 
+`--filter=blob:none` will exclude all files from the clone and only fetch the commits
 
 ##  (cone) sparse-checkout
 
-You can use `--sparse` to get only the root directory, then edit the sparse checkout file to add the directory you want. Or you can use `--depth=1` to get all files but with no history. `--filter=blob:none` will exclude all files from the clone and only fetch the commits, which combined with `--depth=1` results in only a single object.
+You can use `--sparse` to get only the root directory, then edit the sparse checkout file to add the directory you want.
 
-`--single-branch` - ?
+
  
 ```
 cd <directory>
