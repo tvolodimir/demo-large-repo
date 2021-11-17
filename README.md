@@ -26,6 +26,7 @@ Or you can use `--depth=1` to get all files but with no history.
 ## Single Branch clone
  
 `git clone <url> --single-branch` clones only the remote primary HEAD (default: origin/master)
+
 `git clone <url> --branch <branch> --single-branch [<folder>]` clones only the remote <branch>
  
 ```
