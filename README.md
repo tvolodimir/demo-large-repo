@@ -130,4 +130,5 @@ working on two branches simultaneously - https://stackoverflow.com/a/30186843
 - https://www.atlassian.com/git/tutorials/big-repositories
 - https://jira.atlassian.com/browse/BSERV-11639
 - https://stackoverflow.com/a/67351911
+- https://github.com/github/git-sizer
 
